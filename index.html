@@ -1,6 +1,281 @@
 <!DOCTYPE html>
-<html>
-<body>
-  <h1>Olá, Mundo! Meu site .github.io está online.</h1>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kariera | Advisory para Consultorias de TI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .accent-color { color: #3b82f6; }
+        .btn-primary { 
+            background-color: #3b82f6; 
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover { 
+            background-color: #2563eb; 
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.5);
+        }
+        .card-shadow { box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navegação -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-extrabold tracking-tighter text-slate-900">KARIERA<span class="text-blue-600">.</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                    <a href="#desafio" class="hover:text-blue-600 transition">O Desafio</a>
+                    <a href="#advisory" class="hover:text-blue-600 transition">Advisory</a>
+                    <a href="#metodo" class="hover:text-blue-600 transition">Metodologia</a>
+                </div>
+                <div>
+                    <a href="#contato" class="btn-primary text-white px-5 py-2 rounded-full text-sm font-bold">Falar com Consultor</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 gradient-bg text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center lg:text-left grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block py-1 px-3 rounded-full bg-blue-600/20 text-blue-400 text-xs font-bold uppercase tracking-widest mb-4">Exclusivo para Consultorias de TI</span>
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                        Escalone sua Consultoria de <span class="text-blue-500">10 a 100</span> profissionais com lucro.
+                    </h1>
+                    <p class="text-lg text-slate-300 mb-8 max-w-xl mx-auto lg:mx-0">
+                        O serviço de Advisory da Kariera foi desenhado para donos de consultoria de tecnologia que buscam sair da operação, otimizar a entrega e profissionalizar a gestão estratégica.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#contato" class="btn-primary text-white px-8 py-4 rounded-lg font-bold text-center">Quero Agendar um Diagnóstico</a>
+                        <div class="flex items-center gap-2 text-sm text-slate-400 justify-center">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Foco em ROI e Escala
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 backdrop-blur-sm">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center font-bold text-xl text-white">K</div>
+                            <div>
+                                <h3 class="font-bold">Dashboard de Performance</h3>
+                                <p class="text-xs text-slate-400">Visão Geral da Operação</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="h-4 bg-slate-700 rounded-full w-full overflow-hidden"><div class="bg-blue-500 h-full w-3/4"></div></div>
+                            <div class="h-4 bg-slate-700 rounded-full w-full overflow-hidden"><div class="bg-blue-500 h-full w-1/2"></div></div>
+                            <div class="h-4 bg-slate-700 rounded-full w-full overflow-hidden"><div class="bg-blue-500 h-full w-5/6"></div></div>
+                        </div>
+                        <p class="mt-6 text-sm italic text-slate-400">"Sua consultoria não deve depender 100% de você."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Efeito decorativo -->
+        <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px]"></div>
+    </section>
+
+    <!-- Seção de Números -->
+    <section class="py-12 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <p class="text-3xl font-extrabold text-blue-600">+100</p>
+                    <p class="text-slate-500 text-sm">Empresas Impactadas</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-extrabold text-blue-600">ROI</p>
+                    <p class="text-slate-500 text-sm">Foco em Resultados</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-extrabold text-blue-600">10-100</p>
+                    <p class="text-slate-500 text-sm">Foco em Time Médio</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-extrabold text-blue-600">Tech</p>
+                    <p class="text-slate-500 text-sm">Especialistas em TI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O Desafio -->
+    <section id="desafio" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Sua consultoria está estagnada?</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Muitas empresas de TI param de crescer quando atingem 20 ou 30 colaboradores por falta de processos e visão de Advisory.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl card-shadow border-t-4 border-red-500">
+                    <h3 class="text-xl font-bold mb-4">Gargalo no Fundador</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Você ainda é o melhor vendedor e o melhor técnico? Se você parar, a empresa para? Isso impede a escala real.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl card-shadow border-t-4 border-red-500">
+                    <h3 class="text-xl font-bold mb-4">Churn de Talentos</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Perder profissionais qualificados para o mercado externo é um pesadelo constante que drena sua margem de lucro.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl card-shadow border-t-4 border-red-500">
+                    <h3 class="text-xl font-bold mb-4">Falta de Predictibilidade</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Vendas instáveis e projetos mal precificados causam um fluxo de caixa que é uma montanha-russa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisory Section -->
+    <section id="advisory" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1000" alt="Equipe discutindo estratégia" class="rounded-2xl shadow-2xl">
+            </div>
+            <div>
+                <span class="text-blue-600 font-bold uppercase tracking-widest text-sm">Kariera Advisory</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-4 mb-6">Aconselhamento Estratégico para Líderes de Tecnologia</h2>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    Não somos apenas uma consultoria externa. Atuamos como seu **Advisory Board**, sentando à mesa com os sócios para definir os próximos 3 a 5 anos do negócio.
+                </p>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start gap-3">
+                        <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mt-1">✓</div>
+                        <div><p class="font-bold">Estruturação Comercial:</p><p class="text-sm text-slate-500">Criação de máquina de vendas para novos projetos.</p></div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mt-1">✓</div>
+                        <div><p class="font-bold">Otimização de Talentos:</p><p class="text-sm text-slate-500">Modelos de retenção e cultura focada em alta performance.</p></div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mt-1">✓</div>
+                        <div><p class="font-bold">Saída da Operação:</p><p class="text-sm text-slate-500">Processos que permitem ao dono focar apenas no estratégico.</p></div>
+                    </li>
+                </ul>
+                <a href="#contato" class="inline-block text-blue-600 font-bold hover:underline">Ver todos os benefícios →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodologia -->
+    <section id="metodo" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nosso Método de Aceleração</h2>
+                <p class="text-slate-400">Um roadmap claro para transformar sua consultoria em uma máquina de resultados.</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="relative p-6 bg-slate-800 rounded-xl border border-slate-700">
+                    <span class="absolute -top-4 -left-4 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-bold">01</span>
+                    <h3 class="text-xl font-bold mb-2 pt-4">Diagnóstico</h3>
+                    <p class="text-slate-400 text-sm">Análise profunda de financeiro, comercial e operações.</p>
+                </div>
+                <div class="relative p-6 bg-slate-800 rounded-xl border border-slate-700">
+                    <span class="absolute -top-4 -left-4 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-bold">02</span>
+                    <h3 class="text-xl font-bold mb-2 pt-4">Plano de Guerra</h3>
+                    <p class="text-slate-400 text-sm">Definição das metas de escala e indicadores (OKRs).</p>
+                </div>
+                <div class="relative p-6 bg-slate-800 rounded-xl border border-slate-700">
+                    <span class="absolute -top-4 -left-4 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-bold">03</span>
+                    <h3 class="text-xl font-bold mb-2 pt-4">Execução Guiada</h3>
+                    <p class="text-slate-400 text-sm">Acompanhamento quinzenal com os sócios para correção de rota.</p>
+                </div>
+                <div class="relative p-6 bg-slate-800 rounded-xl border border-slate-700">
+                    <span class="absolute -top-4 -left-4 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-bold">04</span>
+                    <h3 class="text-xl font-bold mb-2 pt-4">Escala e Sustentação</h3>
+                    <p class="text-slate-400 text-sm">Consolidação dos processos e crescimento agressivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contato" class="py-24 bg-slate-50">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="bg-white p-8 md:p-12 rounded-3xl card-shadow text-center">
+                <h2 class="text-3xl font-bold mb-4">Sua consultoria está pronta para o próximo nível?</h2>
+                <p class="text-slate-600 mb-10">Preencha o formulário abaixo e receba um diagnóstico inicial de nossos consultores seniores.</p>
+                
+                <form id="contactForm" class="space-y-6 text-left">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Nome Completo</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none transition" placeholder="Ex: João Silva">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">E-mail Corporativo</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none transition" placeholder="joao@empresa.com.br">
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Nome da Empresa</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none transition" placeholder="Minha Consultoria Tech">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Tamanho do Time</label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none transition">
+                                <option>10 a 30 profissionais</option>
+                                <option>31 a 60 profissionais</option>
+                                <option>61 a 100 profissionais</option>
+                                <option>Acima de 100 profissionais</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Qual seu maior desafio hoje?</label>
+                        <textarea class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none transition" rows="4" placeholder="Ex: Preciso sair da operação e contratar gerentes..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-primary text-white font-bold py-4 rounded-lg text-lg uppercase tracking-wide">Enviar Diagnóstico</button>
+                </form>
+                <div id="successMessage" class="hidden mt-6 p-4 bg-green-100 text-green-700 rounded-lg font-bold">
+                    Mensagem enviada com sucesso! Em breve entraremos em contato.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-900 text-slate-400 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+            <div>
+                <span class="text-2xl font-extrabold text-white tracking-tighter">KARIERA<span class="text-blue-600">.</span></span>
+                <p class="text-sm mt-2">© 2024 Kariera Advisory & Consulting. Todos os direitos reservados.</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white">LinkedIn</a>
+                <a href="#" class="hover:text-white">Instagram</a>
+                <a href="#" class="hover:text-white">E-mail</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form Submission logic
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.classList.add('hidden');
+            document.getElementById('successMessage').classList.remove('hidden');
+        });
+
+        // Simple smooth scroll enhancement for fixed nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
