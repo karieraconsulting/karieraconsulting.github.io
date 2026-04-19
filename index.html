@@ -19,12 +19,20 @@
             transform: translateY(-2px);
             box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.5);
         }
+        .btn-whatsapp {
+            background-color: #25D366;
+            transition: all 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1DA851;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(37, 211, 102, 0.5);
+        }
         .card-shadow { box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
 
-    <!-- Navegação -->
     <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
@@ -44,7 +52,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="pt-32 pb-20 gradient-bg text-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center lg:text-left grid lg:grid-cols-2 gap-12 items-center">
@@ -83,11 +90,9 @@
                 </div>
             </div>
         </div>
-        <!-- Efeito decorativo -->
         <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px]"></div>
     </section>
 
-    <!-- Seção de Números -->
     <section class="py-12 bg-white border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -111,7 +116,6 @@
         </div>
     </section>
 
-    <!-- O Desafio -->
     <section id="desafio" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -135,7 +139,6 @@
         </div>
     </section>
 
-    <!-- Advisory Section -->
     <section id="advisory" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -166,7 +169,6 @@
         </div>
     </section>
 
-    <!-- Metodologia -->
     <section id="metodo" class="py-24 bg-slate-900 text-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -198,53 +200,22 @@
         </div>
     </section>
 
-    <!-- Formulário de Contato -->
     <section id="contato" class="py-24 bg-slate-50">
         <div class="max-w-3xl mx-auto px-4">
             <div class="bg-white p-8 md:p-12 rounded-3xl card-shadow text-center">
                 <h2 class="text-3xl font-bold mb-4">Sua consultoria está pronta para o próximo nível?</h2>
-                <p class="text-slate-600 mb-10">Preencha o formulário abaixo e receba um diagnóstico inicial de nossos consultores seniores.</p>
+                <p class="text-slate-600 mb-10">Clique no botão abaixo para falar com um de nossos consultores seniores diretamente pelo WhatsApp e solicitar um diagnóstico inicial.</p>
                 
-                <form id="contactForm" class="space-y-6 text-left">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-sm font-bold text-slate-700 mb-2">Nome Completo</label>
-                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none transition" placeholder="Ex: João Silva">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-bold text-slate-700 mb-2">E-mail Corporativo</label>
-                            <input type="email" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none transition" placeholder="joao@empresa.com.br">
-                        </div>
-                    </div>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-sm font-bold text-slate-700 mb-2">Nome da Empresa</label>
-                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none transition" placeholder="Minha Consultoria Tech">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-bold text-slate-700 mb-2">Tamanho do Time</label>
-                            <select class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none transition">
-                                <option>10 a 30 profissionais</option>
-                                <option>31 a 60 profissionais</option>
-                                <option>61 a 100 profissionais</option>
-                                <option>Acima de 100 profissionais</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-bold text-slate-700 mb-2">Qual seu maior desafio hoje?</label>
-                        <textarea class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none transition" rows="4" placeholder="Ex: Preciso sair da operação e contratar gerentes..."></textarea>
-                    </div>
-                    <button type="submit" class="w-full btn-primary text-white font-bold py-4 rounded-lg text-lg uppercase tracking-wide">Enviar Diagnóstico</button>
-                </form>
-                <div id="successMessage" class="hidden mt-6 p-4 bg-green-100 text-green-700 rounded-lg font-bold">
-                    Mensagem enviada com sucesso! Em breve entraremos em contato.
-                </div>
+                <a href="https://wa.me/5511945081313?text=Ol%C3%A1%20Kariera%2C%20tenho%20interesse%20em%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%20oferecidos" target="_blank" class="inline-flex items-center justify-center gap-3 w-full md:w-auto px-10 py-5 btn-whatsapp text-white font-bold rounded-lg text-lg uppercase tracking-wide">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+                    </svg>
+                    Falar via WhatsApp
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="py-12 bg-slate-900 text-slate-400 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
             <div>
@@ -260,13 +231,6 @@
     </footer>
 
     <script>
-        // Form Submission logic
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            this.classList.add('hidden');
-            document.getElementById('successMessage').classList.remove('hidden');
-        });
-
         // Simple smooth scroll enhancement for fixed nav
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
